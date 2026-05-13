@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – WriteDiary</title>
+  <meta name="description" content="Get in touch with Waqas Bukhari for support or inquiries regarding WriteDiary." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <style>
+    .contact-page-container { max-width: 1000px; margin: 120px auto; padding: 0 20px; }
+    .contact-header { text-align: center; margin-bottom: 4rem; }
+    .contact-wrapper { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; }
+    .info-box { background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 16px; height: fit-content; }
+    .info-item { margin-bottom: 1.5rem; }
+    .info-item h4 { color: var(--gold); margin-bottom: 0.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+    .info-item p { font-size: 1.1rem; }
+    @media (max-width: 850px) { .contact-wrapper { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header id="site-header"></header>
+
+<div class="page-wrapper">
+  <div class="contact-page-container">
+    <div class="contact-header">
+      <div class="hero-badge">Get In Touch</div>
+      <h1 class="section-title">We'd Love to Hear From You</h1>
+      <p class="section-subtitle">Have feedback, a bug report, or a feature suggestion? Reach out directly.</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="info-box">
+        <div class="info-item">
+          <h4>Direct Email</h4>
+          <p>nolushac@gmail.com</p>
+        </div>
+        <div class="info-item">
+          <h4>Lead Developer</h4>
+          <p>Waqas Bukhari</p>
+        </div>
+        <div class="info-item">
+          <h4>Technical Support</h4>
+          <p>Response time: Within 24-48 hours</p>
+        </div>
+        <div class="info-item">
+          <h4>Location</h4>
+          <p>Available worldwide via GitHub Pages</p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <form class="contact-form" id="contactPageForm" style="display: block; opacity: 1; transform: none;">
+          <div class="form-group">
+            <label for="pName">Your Name</label>
+            <input type="text" id="pName" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="pEmail">Email Address</label>
+            <input type="email" id="pEmail" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="pSubject">Subject</label>
+            <input type="text" id="pSubject" placeholder="How can we help?" />
+          </div>
+          <div class="form-group">
+            <label for="pMessage">Message</label>
+            <textarea id="pMessage" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width: 100%;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
