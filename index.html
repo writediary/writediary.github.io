@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>WriteDiary – Free Online Diary Writing Website | Write Your Daily Diary Online</title>
+  <meta name="description" content="WriteDiary is a free online diary writing website. Write diary entries, keep a daily diary, reflect on your thoughts, and store your personal diary securely online. Available in English, Spanish, French, German, and Portuguese." />
+  <meta name="keywords" content="write diary, online diary, online diary writing, diary writing website, diary to write, daily diary writing, free diary, personal diary online" />
+  <meta name="author" content="WriteDiary" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://writediary.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WriteDiary – Free Online Diary Writing Website" />
+  <meta property="og:description" content="Write diary entries online, keep a daily diary, and reflect on your personal journey. Private, secure, and free." />
+  <meta property="og:url" content="https://writediary.github.io/" />
+  <meta property="og:site_name" content="WriteDiary" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WriteDiary – Free Online Diary Writing Website" />
+  <meta name="twitter:description" content="Write diary entries online, keep a daily diary, and reflect on your personal journey. Private, secure, and free." />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://writediary.github.io/#website",
+        "url": "https://writediary.github.io/",
+        "name": "WriteDiary",
+        "description": "Free online diary writing website for personal journaling",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://writediary.github.io/app.html?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://writediary.github.io/#app",
+        "name": "WriteDiary Online Diary",
+        "url": "https://writediary.github.io/",
+        "description": "A free, private, and secure online diary writing application. Write diary entries, keep a daily diary, and reflect on your personal journey.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "inLanguage": ["en","es","pt","fr","de"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://writediary.github.io/#org",
+        "name": "WriteDiary",
+        "url": "https://writediary.github.io/",
+        "logo": "https://writediary.github.io/logo.png"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is WriteDiary free to use?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, WriteDiary is completely free. You can write unlimited diary entries without any subscription." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my diary private and secure?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your diary entries are stored locally on your device using browser storage, so only you can access them." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I write my diary online every day?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! WriteDiary is designed for daily diary writing. Each entry is automatically dated and saved." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+</head>
+<body>
+
+<!-- ══ HEADER (Component) ══ -->
+<header id="site-header" role="banner"></header>
+
+<div class="page-wrapper">
+
+  <!-- ══ SECTION 1: HERO ══ -->
+  <section id="home" aria-label="Hero">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">✨ <span id="hero-badge-text">Free Online Diary Writing</span></div>
+        <h1 class="hero-title" id="hero-title">
+          Your Private Space to <em>Write Diary</em> Online
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          WriteDiary is the most elegant online diary writing website. Capture your daily thoughts, emotions, and memories in a beautiful, secure digital diary — completely free.
+        </p>
+        <div class="hero-cta">
+          <a href="app.html" class="btn-gold" id="hero-cta-primary">📝 Start Writing Today</a>
+          <a href="#features" class="btn-secondary" id="hero-cta-secondary" style="color:#fff;border-color:rgba(255,255,255,0.25);">Explore Features</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label" id="stat1-label">Free Forever</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">5</div>
+            <div class="hero-stat-label" id="stat2-label">Languages Supported</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label" id="stat3-label">Daily Diary Entries</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-mockup">
+        <div class="diary-book" role="img" aria-label="Diary writing interface preview">
+          <div class="diary-header">
+            <span class="diary-date" id="mockup-date"></span>
+            <span class="diary-mood" aria-label="Mood">😊</span>
+          </div>
+          <div class="diary-body">
+            <input class="diary-title-input" readonly value="My thoughts today..." aria-label="Diary entry title" />
+            <div class="diary-lines" id="diary-lines-mockup"></div>
+          </div>
+          <div class="diary-footer">
+            <span class="diary-wc" id="mockup-wc">24 words</span>
+            <span class="diary-save">💾 Saved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 2: FEATURES ══ -->
+  <section id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="feat-label">Why Choose WriteDiary</span>
+        <h2 class="section-title" id="features-heading">Everything You Need for Daily Diary Writing</h2>
+        <p class="section-subtitle" id="feat-subtitle">A beautifully crafted online diary writing website with every feature you need to write, reflect, and grow.</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 3: HOW IT WORKS ══ -->
+  <section id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="hiw-label">Simple & Intuitive</span>
+        <h2 class="section-title" id="hiw-heading">Start Writing Your Diary in 3 Easy Steps</h2>
+        <p class="section-subtitle" id="hiw-subtitle">No sign-up required. Open your online diary and start writing immediately.</p>
+      </div>
+      <div class="steps-grid" id="steps-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 4: ABOUT / WHY DIARY ══ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <span class="about-quote-mark" aria-hidden="true">"</span>
+          <p class="about-quote" id="about-quote">"Writing in a diary is a way of making sense of the world and understanding yourself."</p>
+          <p class="about-author" id="about-author">— The Power of Daily Diary Writing</p>
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label" id="about-label">Why Write a Diary Online</span>
+          <h2 class="section-title" id="about-heading">The Benefits of Keeping a Daily Diary</h2>
+          <p id="about-p1">Daily diary writing is one of the most powerful habits you can build. An online diary offers the convenience of writing from any device — your phone, tablet, or computer — while keeping your thoughts private and organized.</p>
+          <p id="about-p2">WriteDiary is the diary to write your authentic story. Whether you're processing a difficult day, celebrating a milestone, or simply practicing gratitude, our diary writing website gives you the perfect space to do it.</p>
+          <div class="about-benefits" id="about-benefits"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 5: DAILY DIARY GUIDE ══ -->
+  <section id="guide" aria-labelledby="guide-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="guide-label">Writing Tips</span>
+        <h2 class="section-title" id="guide-heading">Daily Diary Writing Tips for Beginners</h2>
+        <p class="section-subtitle" id="guide-subtitle">Start your online diary writing journey with these expert tips to make the most of every entry.</p>
+      </div>
+      <div class="tips-grid" id="tips-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 6: LANGUAGES ══ -->
+  <section id="languages" aria-labelledby="lang-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="lang-label">Global Diary Writing</span>
+        <h2 class="section-title" id="lang-heading">Write Your Diary in Your Language</h2>
+        <p class="section-subtitle" id="lang-subtitle">WriteDiary supports 5 languages so you can write your personal diary in the language closest to your heart.</p>
+      </div>
+      <div class="lang-grid" id="lang-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 7: SEO CONTENT ══ -->
+  <section id="why-diary" aria-labelledby="whydiary-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="whydiary-label">Learn More</span>
+        <h2 class="section-title" id="whydiary-heading">Everything About Online Diary Writing</h2>
+        <p class="section-subtitle" id="whydiary-subtitle">Understand the power of a personal diary to write your daily thoughts and why it matters.</p>
+      </div>
+      <div class="content-cols" id="content-cols"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 8: FAQ ══ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label" id="faq-label">Common Questions</span>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+        <p class="section-subtitle" id="faq-subtitle">Everything you need to know about WriteDiary — your free online diary writing website.</p>
+      </div>
+      <div class="faq-grid" id="faq-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANNER ══ -->
+  <section id="cta-banner" aria-label="Call to action">
+    <div class="container">
+      <span class="section-label" id="cta-label" style="color:rgba(255,255,255,0.7)">Start Today — It's Free</span>
+      <h2 id="cta-title">Ready to Write Your First Diary Entry?</h2>
+      <p id="cta-desc">Join thousands who use WriteDiary as their trusted online diary writing website every day. No sign-up, no payment — just open and write.</p>
+      <a href="app.html" class="btn-gold" id="cta-btn">📖 Open My Diary Now</a>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 9: CONTACT ══ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-label" id="contact-label">Get In Touch</span>
+          <h2 class="section-title" id="contact-heading">Contact Us</h2>
+          <p id="contact-desc">Have a question or suggestion about our online diary writing platform? We'd love to hear from you.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-item-icon">📧</span>
+              <span>hello@writediary.github.io</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-icon">🌍</span>
+              <span>Available worldwide in 5 languages</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-icon">🔒</span>
+              <span>Your privacy is our priority</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal reveal-delay-1" id="contactForm" aria-label="Contact form" novalidate>
+          <div class="form-group">
+            <label for="cName" id="label-name">Your Name</label>
+            <input type="text" id="cName" name="name" placeholder="Jane Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="cEmail" id="label-email">Email Address</label>
+            <input type="email" id="cEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="cSubject" id="label-subject">Subject</label>
+            <input type="text" id="cSubject" name="subject" placeholder="Question about WriteDiary" />
+          </div>
+          <div class="form-group">
+            <label for="cMessage" id="label-message">Message</label>
+            <textarea id="cMessage" name="message" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submit-btn">Send Message →</button>
+          <div class="form-success" id="formSuccess" role="alert">✅ Message sent! We'll get back to you shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end page-wrapper -->
+
+<!-- ══ FOOTER (Component) ══ -->
+<footer id="site-footer" role="contentinfo"></footer>
+
+<!-- Scripts -->
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
