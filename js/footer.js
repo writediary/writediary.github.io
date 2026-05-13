@@ -10,7 +10,7 @@ function renderFooter() {
       quicklinks: "Quick Links", features: "Features", about: "About", faq: "FAQ",
       diary_tools: "Diary Tools", write: "Write Diary", daily: "Daily Writing", guide: "Writing Guide",
       support: "Support", contact: "Contact", privacy: "Privacy Policy", terms: "Terms of Use",
-      copyright: "© 2025 WriteDiary. All rights reserved.",
+      copyright: "© 2026 WriteDiary. All rights reserved.",
       rights: "Your stories, your privacy, always protected.",
       desc_title: "Online Diary Writing Platform"
     },
@@ -19,7 +19,7 @@ function renderFooter() {
       quicklinks: "Enlaces rápidos", features: "Funciones", about: "Acerca de", faq: "Preguntas",
       diary_tools: "Herramientas", write: "Escribir Diario", daily: "Escritura Diaria", guide: "Guía",
       support: "Soporte", contact: "Contacto", privacy: "Privacidad", terms: "Términos",
-      copyright: "© 2025 WriteDiary. Todos los derechos reservados.",
+      copyright: "© 2026 WriteDiary. Todos los derechos reservados.",
       rights: "Tus historias, tu privacidad, siempre protegidas.",
       desc_title: "Plataforma de Diario en Línea"
     },
@@ -28,7 +28,7 @@ function renderFooter() {
       quicklinks: "Links Rápidos", features: "Recursos", about: "Sobre", faq: "FAQ",
       diary_tools: "Ferramentas", write: "Escrever Diário", daily: "Escrita Diária", guide: "Guia",
       support: "Suporte", contact: "Contato", privacy: "Privacidade", terms: "Termos",
-      copyright: "© 2025 WriteDiary. Todos os direitos reservados.",
+      copyright: "© 2026 WriteDiary. Todos os direitos reservados.",
       rights: "Suas histórias, sua privacidade, sempre protegidas.",
       desc_title: "Plataforma de Diário Online"
     },
@@ -37,7 +37,7 @@ function renderFooter() {
       quicklinks: "Liens Rapides", features: "Fonctions", about: "À Propos", faq: "FAQ",
       diary_tools: "Outils Journal", write: "Écrire Journal", daily: "Écriture Quotidienne", guide: "Guide",
       support: "Assistance", contact: "Contact", privacy: "Confidentialité", terms: "Conditions",
-      copyright: "© 2025 WriteDiary. Tous droits réservés.",
+      copyright: "© 2026 WriteDiary. Tous droits réservés.",
       rights: "Vos histoires, votre confidentialité, toujours protégées.",
       desc_title: "Plateforme de Journal en Ligne"
     },
@@ -46,7 +46,7 @@ function renderFooter() {
       quicklinks: "Schnelllinks", features: "Funktionen", about: "Über uns", faq: "FAQ",
       diary_tools: "Tagebuch-Tools", write: "Tagebuch Schreiben", daily: "Tägliches Schreiben", guide: "Leitfaden",
       support: "Support", contact: "Kontakt", privacy: "Datenschutz", terms: "Nutzungsbedingungen",
-      copyright: "© 2025 WriteDiary. Alle Rechte vorbehalten.",
+      copyright: "© 2026 WriteDiary. Alle Rechte vorbehalten.",
       rights: "Ihre Geschichten, Ihre Privatsphäre, immer geschützt.",
       desc_title: "Online-Tagebuch-Plattform"
     }
@@ -56,7 +56,7 @@ function renderFooter() {
   footer.innerHTML = `
     <div class="footer-body">
       <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="WriteDiary">
+        <a href="/" class="logo" aria-label="WriteDiary">
           <span class="logo-icon">📖</span>
           <span class="logo-text">Write<span class="logo-accent">Diary</span></span>
         </a>
@@ -77,25 +77,26 @@ function renderFooter() {
         <div class="footer-col">
           <h3>${ft.quicklinks}</h3>
           <ul>
-            <li><a href="index.html#features">${ft.features}</a></li>
-            <li><a href="index.html#about">${ft.about}</a></li>
-            <li><a href="index.html#faq">${ft.faq}</a></li>
+            <li><a href="/#features">${ft.features}</a></li>
+            <li><a href="/#about">${ft.about}</a></li>
+            <li><a href="/#faq">${ft.faq}</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h3>${ft.diary_tools}</h3>
           <ul>
-            <li><a href="app.html">${ft.write}</a></li>
-            <li><a href="app.html">${ft.daily}</a></li>
-            <li><a href="index.html#guide">${ft.guide}</a></li>
+            <li><a href="/#diary">${ft.write}</a></li>
+            <li><a href="/#diary">${ft.daily}</a></li>
+            <li><a href="/#guide">${ft.guide}</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3>${ft.support}</h3>
+          <h3>${ft.pages}</h3>
           <ul>
-            <li><a href="index.html#contact">${ft.contact}</a></li>
-            <li><a href="privacy.html">${ft.privacy}</a></li>
-            <li><a href="terms.html">${ft.terms}</a></li>
+            <li><a href="/contact">${ft.contact}</a></li>
+            <li><a href="/about">${ft.about}</a></li>
+            <li><a href="/privacy">${ft.privacy}</a></li>
+            <li><a href="/terms">${ft.terms}</a></li>
           </ul>
         </div>
       </div>
