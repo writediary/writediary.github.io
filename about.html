@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – WriteDiary</title>
+  <meta name="description" content="Learn about the mission behind WriteDiary and the developer behind the platform." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <style>
+    .about-page-content { max-width: 900px; margin: 120px auto; padding: 0 20px; color: var(--text-color); }
+    .profile-card { 
+      background: rgba(255,255,255,0.03); 
+      border: 1px solid rgba(255,255,255,0.1); 
+      padding: 3rem; 
+      border-radius: 24px; 
+      display: flex; 
+      gap: 2rem; 
+      align-items: center;
+      margin-top: 3rem;
+    }
+    .profile-text h2 { color: var(--gold); margin-bottom: 1rem; }
+    .profile-text p { line-height: 1.7; opacity: 0.9; }
+    .mission-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .mission-item { background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 12px; border-left: 3px solid var(--gold); }
+    @media (max-width: 768px) { .profile-card { flex-direction: column; text-align: center; } }
+  </style>
+</head>
+<body>
+
+<header id="site-header"></header>
+
+<div class="page-wrapper">
+  <div class="about-page-content">
+    <div class="text-center">
+      <div class="hero-badge">Our Story</div>
+      <h1 class="section-title">Why We Built WriteDiary</h1>
+      <p class="section-subtitle">A mission to provide a secure, free, and elegant space for digital journaling without the clutter of modern social media.</p>
+    </div>
+
+    <div class="mission-grid">
+      <div class="mission-item">
+        <h3>Privacy First</h3>
+        <p>We believe your thoughts belong to you. That's why we use local storage to keep your entries on your own device.</p>
+      </div>
+      <div class="mission-item">
+        <h3>Zero Cost</h3>
+        <p>Self-reflection should be accessible to everyone. WriteDiary will always be 100% free to use.</p>
+      </div>
+      <div class="mission-item">
+        <h3>Global Reach</h3>
+        <p>Available in 5 languages to ensure users worldwide can write in the language they find most comfortable.</p>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-text">
+        <h2>Meet the Developer</h2>
+        <p><strong>Waqas Bukhari</strong> is a dedicated Web Developer and SEO Expert with over four years of experience in building high-performance web utilities. With a passion for clean code and user-centric design, Waqas created WriteDiary to help individuals maintain their mental clarity through the power of daily writing.</p>
+        <p>By combining technical SEO principles with modern web development frameworks, the goal for WriteDiary is to be the fastest and most reliable digital diary available on the web today.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="site-footer"></footer>
+
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
