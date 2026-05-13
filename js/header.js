@@ -53,7 +53,7 @@ function renderHeader() {
           <li><a href="/#home" data-i18n="nav_home">${t.nav_home}</a></li>
           <li><a href="/#features" data-i18n="nav_features">${t.nav_features}</a></li>
           <li><a href="/#diary" data-i18n="nav_write">${t.nav_write}</a></li>
-          <li><a href="/#about" data-i18n="nav_about">${t.nav_about}</a></li>
+          <li><a href="/about" data-i18n="nav_about">${t.nav_about}</a></li>
           <li><a href="/#faq" data-i18n="nav_faq">${t.nav_faq}</a></li>
           <li><a href="/#contact" data-i18n="nav_contact">${t.nav_contact}</a></li>
         </ul>
