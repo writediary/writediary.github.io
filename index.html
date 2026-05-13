@@ -151,6 +151,72 @@
     </div>
   </section>
 
+  <div class="page-wrapper">
+  <main id="app-main" class="app-layout" role="main" aria-label="Diary writing application">
+ 
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar" role="complementary" aria-label="Diary entries list">
+      <div class="sidebar-header">
+        <span class="sidebar-title" id="sidebar-title">My Diary</span>
+        <button class="btn-new-entry" id="btnNewEntry" aria-label="Create new diary entry">+ New</button>
+      </div>
+      <div class="entry-list" id="entryList" role="list" aria-label="Previous diary entries">
+        <p class="no-entries" id="noEntries">No entries yet.<br/>Start writing your diary!</p>
+      </div>
+      <div style="padding-top:1rem;border-top:1px solid rgba(255,255,255,0.08);">
+        <button id="btnExport" style="width:100%;padding:0.6rem;background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.6);border-radius:8px;font-size:0.82rem;transition:0.3s;" aria-label="Export diary entries">📤 Export Diary</button>
+      </div>
+    </aside>
+ 
+    <!-- ── Editor ── -->
+    <div class="editor-area">
+      <!-- Toolbar -->
+      <div class="editor-toolbar" role="toolbar" aria-label="Text formatting toolbar">
+        <div class="toolbar-group">
+          <button class="toolbar-btn" id="tbBold" title="Bold" aria-label="Bold"><b>B</b></button>
+          <button class="toolbar-btn" id="tbItalic" title="Italic" aria-label="Italic"><i>I</i></button>
+          <button class="toolbar-btn" id="tbUnderline" title="Underline" aria-label="Underline"><u>U</u></button>
+        </div>
+        <div class="toolbar-group" aria-label="Mood selector">
+          <span style="font-size:0.8rem;color:var(--text-muted);margin-right:0.3rem;">Mood:</span>
+          <div class="mood-selector" role="radiogroup" aria-label="Select your mood">
+            <button class="mood-btn" data-mood="😊" aria-label="Happy">😊</button>
+            <button class="mood-btn" data-mood="😢" aria-label="Sad">😢</button>
+            <button class="mood-btn" data-mood="😤" aria-label="Angry">😤</button>
+            <button class="mood-btn" data-mood="😴" aria-label="Tired">😴</button>
+            <button class="mood-btn" data-mood="🤩" aria-label="Excited">🤩</button>
+            <button class="mood-btn" data-mood="😌" aria-label="Calm">😌</button>
+            <button class="mood-btn" data-mood="😰" aria-label="Anxious">😰</button>
+            <button class="mood-btn" data-mood="🥰" aria-label="Grateful">🥰</button>
+          </div>
+        </div>
+        <div class="toolbar-group">
+          <button class="toolbar-btn" id="btnDelete" title="Delete entry" aria-label="Delete current entry" style="color:var(--coral)">🗑</button>
+          <button class="btn-primary" id="btnSave" style="padding:0.5rem 1.2rem;font-size:0.85rem;" aria-label="Save diary entry">💾 Save</button>
+        </div>
+      </div>
+ 
+      <!-- Editor Main -->
+      <div class="editor-main" id="editorMain">
+        <div class="entry-meta">
+          <span class="entry-meta-date" id="entryDate"></span>
+          <span id="entryMoodDisplay" style="font-size:1.2rem;"></span>
+        </div>
+        <input type="text" id="entryTitle" placeholder="Title your diary entry..." aria-label="Diary entry title" autocomplete="off" />
+        <textarea id="entryContent" placeholder="Begin writing your diary... What happened today? How are you feeling? What are you grateful for?" aria-label="Diary entry content"></textarea>
+      </div>
+ 
+      <!-- Status bar -->
+      <div class="editor-statusbar">
+        <span id="wordCount">0 words</span>
+        <span class="save-status" id="saveStatus" aria-live="polite"></span>
+        <span id="charCount">0 characters</span>
+      </div>
+    </div>
+ 
+  </main>
+</div>
+
   <!-- ══ SECTION 2: FEATURES ══ -->
   <section id="features" aria-labelledby="features-heading">
     <div class="container">
