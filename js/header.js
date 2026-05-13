@@ -72,7 +72,7 @@ function renderHeader() {
               <li role="option" data-lang="de" ${lang==='de'?'aria-selected="true"':''}>🇩🇪 Deutsch</li>
             </ul>
           </div>
-          <a href="app.html" class="btn-primary nav-cta" data-i18n="cta_start">${t.cta_start}</a>
+          <a href="/#diary" class="btn-primary nav-cta" data-i18n="cta_start">${t.cta_start}</a>
         </div>
       </div>
     </nav>
